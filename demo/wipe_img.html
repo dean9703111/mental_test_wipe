@@ -4,17 +4,8 @@
 	<title>wipe</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-
-	<style>
-		#wipe {
-			position:absolute;top:0;left:0;width:100%;height:100vh;z-index:-5;
-			/*background: url(img/girl2.jpg) no-repeat;*/
-			background-size: 100% 100%;
-		}
-		canvas {
-			opacity: 1.0;
-		}
-	</style>
+	
+	<link href="../src/mental.css" rel="stylesheet">
 </head>
 <body style="overflow-y: hidden;">
 	<button title="太陽" style="width:50%;height:25vh;float: left;z-index:1; opacity: 0;" onclick="change_img('sun')"></button>
@@ -30,34 +21,6 @@
 
 	<script src="../src/wipe.js"></script>
 	<script src="../src/jquery.js"></script>
-	<script>
-	function change_img(img_name) {
-        $("button").attr("disabled", "disabled");
-		$("button").css("z-index", "-10");
-		$("#wipe").css("z-index", "20");
-		$("#wipe").css("background", "url(img/"+ img_name +".jpg) no-repeat");
-        /*var wipe = document.getElementById("wipe")
-		wipe.css("background","url(img/"+ img_name +".jpg) no-repeat")*/
-    }
-
-	var wipe = new Wipe({
-		el: '#wipe',
-		fg: 'img/main.jpg',
-		size: 50,
-		debug: false,
-		autoWipe: false,
-		data: null,
-		onswiping: function (percent) {
-			/*if (percent <= 0) return;
-			if (percent < 50) {
-				alert('加油，帅哥，我就快出来了！come on！')
-			} else if (percent > 50) {
-				alert('啊，帅哥，谢谢你解救我，今晚我是你的了哦！')
-			} else if (percent > 80) {
-				alert('哇哇哇！！！啊啊啊！！！再来一次！！！');
-			}*/
-		}
-	})
-	</script>
+	<script src="../src/mental.js"></script>
 </body>
 </html>
