@@ -2,14 +2,14 @@ function change_img(img_name) {
     $("button").attr("disabled", "disabled");
     $("button").css("z-index", "-10");
     $("#wipe").css("z-index", "20");
-    $("#wipe").css("background", "url(demo/img/"+ img_name +".jpg) no-repeat");
+    $("#wipe").css("background", "url(img/"+ img_name +".jpg) no-repeat");
     /*var wipe = document.getElementById("wipe")
     wipe.css("background","url(img/"+ img_name +".jpg) no-repeat")*/
 }
 
 var wipe = new Wipe({
     el: '#wipe',
-    fg: 'demo/img/main.jpg',
+    fg: 'img/main.jpg',
     size: 50,
     debug: false,
     autoWipe: false,
