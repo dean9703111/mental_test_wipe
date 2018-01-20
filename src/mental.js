@@ -5,6 +5,7 @@ function change_img(img_name) {
     $("#wipe").css("background", "url(img/"+ img_name +".jpg) no-repeat");
     $("#wipe").css("background-attachment", "fixed");
     $("#wipe").css("background-position", "center");
+    $("#wipe").css("background-size", "80% 80%");
     /*var wipe = document.getElementById("wipe")
     wipe.css("background","url(img/"+ img_name +".jpg) no-repeat")*/
 }
