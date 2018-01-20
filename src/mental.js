@@ -3,6 +3,8 @@ function change_img(img_name) {
     $("button").css("z-index", "-10");
     $("#wipe").css("z-index", "20");
     $("#wipe").css("background", "url(img/"+ img_name +".jpg) no-repeat");
+    $("#wipe").css("background-attachment", "fixed");
+    $("#wipe").css("background-position", "center");
     /*var wipe = document.getElementById("wipe")
     wipe.css("background","url(img/"+ img_name +".jpg) no-repeat")*/
 }
