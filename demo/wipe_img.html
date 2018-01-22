@@ -7,15 +7,23 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<link href="../src/mental.css" rel="stylesheet">
 	<style>
-	@media screen and (min-width: 280px) and (max-width: 1800px) and (orientation: landscape) {
-	  html {
-	    transform: rotate(-90deg);
-	    transform-origin: left top;
-	    width: 100vw;
-	    overflow-x: hidden;
-	    position: absolute;
-	    top: 100%;
-	    left: 0;
+	@media only screen and (orientation:portrait){
+	  html {  
+	    height: 100vw;
+	    -webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	  }
+	}
+	@media only screen and (orientation:landscape){
+	  html {  
+	     -webkit-transform: rotate(-90deg);
+	     -moz-transform: rotate(-90deg);
+	     -o-transform: rotate(-90deg);
+	     -ms-transform: rotate(-90deg);
+	     transform: rotate(-90deg);
 	  }
 	}
 	</style>
