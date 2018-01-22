@@ -1,7 +1,7 @@
 
 if(window.orientation!=0){
         var obj=document.getElementById('orientation');
-        alert('横屏内容太少啦，请使用竖屏观看！');
+        //alert('横屏内容太少啦，请使用竖屏观看！');
         obj.style.display='block';
 }
 
@@ -12,7 +12,7 @@ if(window.orientation==0){
                 obj.style.display='none';
         }else
         {
-                alert('横屏内容太少啦，请使用竖屏观看！');
+                //alert('横屏内容太少啦，请使用竖屏观看！');
                 obj.style.display='block';
         }
 }; 
