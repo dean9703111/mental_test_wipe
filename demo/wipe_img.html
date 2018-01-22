@@ -6,6 +6,19 @@
 	<meta name="x5-orientation" content="portrait">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<link href="../src/mental.css" rel="stylesheet">
+	<style>
+	@media screen and (min-width: 280px) and (max-width: 1800px) and (orientation: landscape) {
+	  html {
+	    transform: rotate(-90deg);
+	    transform-origin: left top;
+	    width: 100vh;
+	    overflow-x: hidden;
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	  }
+	}
+	</style>
 </head>
 <body style="overflow-y: hidden;">
 	<button title="太陽" style="width:50%;height:25vh;float: left;z-index:1; opacity: 0;" onclick="change_img('sun')"></button>
