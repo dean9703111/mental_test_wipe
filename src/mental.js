@@ -1,3 +1,22 @@
+
+if(window.orientation!=0){
+        var obj=document.getElementById('orientation');
+        alert('横屏内容太少啦，请使用竖屏观看！');
+        obj.style.display='block';
+}
+
+window.onorientationchange=function(){ 
+var obj=document.getElementById('orientation');
+
+if(window.orientation==0){
+                obj.style.display='none';
+        }else
+        {
+                alert('横屏内容太少啦，请使用竖屏观看！');
+                obj.style.display='block';
+        }
+}; 
+
 function change_img(img_name) {
     $("button").attr("disabled", "disabled");
     $("button").css("z-index", "-10");
