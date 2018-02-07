@@ -19,13 +19,5 @@ var wipe = new Wipe({
     autoWipe: false,
     data: null,
     onswiping: function (percent) {
-        /*if (percent <= 0) return;
-        if (percent < 50) {
-            alert('加油，帅哥，我就快出来了！come on！')
-        } else if (percent > 50) {
-            alert('啊，帅哥，谢谢你解救我，今晚我是你的了哦！')
-        } else if (percent > 80) {
-            alert('哇哇哇！！！啊啊啊！！！再来一次！！！');
-        }*/
     }
 })
