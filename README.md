@@ -18,7 +18,7 @@
         >        ![image](/img/README/webFull.PNG)
         >    2. 請先按F12(或是滑鼠右鍵選擇檢查)進入開發者模式
         >        ![image](/img/README/webDev.PNG)
-        >    3. 選擇使用手機瀏覽
+        >    3. 選擇使用手機瀏覽後按F5重整頁面
         >        ![image](/img/README/webMobile.PNG)
     2. 接著點擊你想要顯示的圖片的區域(這裡以星星做舉例)
         ![image](/img/README/clickStar.PNG)
