@@ -1,4 +1,5 @@
 
+
 function change_img(img_name) {
     $("button").attr("disabled", "disabled");
     $("button").css("z-index", "-10");
@@ -7,8 +8,6 @@ function change_img(img_name) {
     $("#wipe").css("background-attachment", "fixed");
     $("#wipe").css("background-position", "center");
     $("#wipe").css("background-size", "100% 60%");
-    /*var wipe = document.getElementById("wipe")
-    wipe.css("background","url(img/"+ img_name +".jpg) no-repeat")*/
 }
 
 var wipe = new Wipe({
